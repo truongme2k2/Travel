@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour</title>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/tuor.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="assets/js/tour.js"></script>
+  </head>
+  <body id="top">
+    <header class="header" data-header>
+      <div class="overlay" data-overlay></div>
+      <div class="header-top">
+        <div class="container">
+          <a href="" class="helpline-box">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+            <div class="wrapper">
+              <p class="helpline-title">Trung tâm chăm sóc :</p>
+              <p class="helpline-number">(+84-24) 38272289</p>
+            </div>
+          </a>
+          <a href="#" class="logo">
+            <h2 class="h2" style="color: white">Travel</h2>
+          </a>
+          <div class="header-btn-group">
+            <button class="search-btn" aria-label="Search">
+              <ion-icon name="search"></ion-icon>
+            </button>
+            <button
+              class="nav-open-btn"
+              aria-label="Open Menu"
+              data-nav-open-btn
+            >
+              <ion-icon name="menu-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-bottom">
+        <div class="container">
+          <ul class="social-list">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
+          <nav class="navbar" data-navbar>
+            <div class="navbar-top">
+              <a href="#" class="logo">
+                <h2 class="h2" style="color: hsl(197, 100%, 36%)">Travel</h2>
+              </a>
+              <button
+                class="nav-close-btn"
+                aria-label="Close Menu"
+                data-nav-close-btn
+              >
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+            <ul class="navbar-list">
+              <li>
+                <a href="home.html" class="navbar-link" data-nav-link>trang chủ</a>
+              </li>
+              <li>
+                <a href="discover.html" class="navbar-link" data-nav-link
+                  >khám phá</a
+                >
+              </li>
+              <li>
+                <a href="#package" class="navbar-link" data-nav-link>chuyến đi</a
+                >
+              </li>
+              <li>
+                <a href="#gallery" class="navbar-link" data-nav-link
+                  >khoảnh khắc</a
+                >
+              </li>
+              <li>
+                <a href="#contact" class="navbar-link" data-nav-link>liên hệ</a>
+              </li>
+              <li>
+                <a href="user.html" class="navbar-link" data-nav-link>hồ sơ</a>
+              </li>
+            </ul>
+          </nav>
+          <a href="tour.html">
+            <button class="btn btn-primary">đặt chuyến</button>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        
+        <section class="hero" id="home" style="background-image: url(/assets/images/discount.jpg)">
+          <div class="container" id="">
+            <h2 class="h1 hero-title" >Chuyến đi khám phá Việt Nam</h2>
+            <p class="hero-text">
+              Khám phá những vùng đất mới, trải nghiệm văn hóa độc đáo và tìm
+              hiểu những chân trời xa xôi cùng chúng tôi, công ty du lịch hàng
+              đầu với dịch vụ hoàn hảo và chất lượng tuyệt vời.
+            </p>
+            <div class="btn-group">
+              <button class="btn btn-primary">khám phá</button>
+            </div>
+          </div>
+        </section>
+       <section class="main">
+          <div class="container">
+            <p class="section-subtitle">kỳ nghỉ tuyệt vời ngày quốc khánh</p>
+            <h3 class="h2 section-title">chuyến đi nghỉ dưỡng tại đà nẵng</h3>
+            <p class="section-text">Hãy đến cùng trải nghiệm với bãi biển Mỹ Khê xanh rì, với Bà Nà Hills nổi tiếng ,với Cù Lao Chàm hoang sơ...</p>
+            <div  class="sell-oder-container" >
+              <div>
+                <div class="list-tour-img"> 
+                  <img id="current-image" src="/assets/images/da_nang-1.jpg" >
+                </div>
+                <div class="button-container">
+                  <button class="list-tour-bt" id="button1" onclick="changeImage('/assets/images/da_nang-1.jpg')"></button>
+                  <button class="list-tour-bt" id="button2" onclick="changeImage('/assets/images/tour-2.jpg')"></button>
+                  <button class="list-tour-bt" id="button3" onclick="changeImage('/assets/images/dis-5.jpg')"></button>
+                </div>
+              </div>
+              
+              <div class="tour-content-sell" >
+                  <h3 class="h3 card-title">Khám phá đà nẵng</h3>
+                  <form method="post" action="/tour">
+                    <div class="sell-container price_sell">
+                      <p>Price:</p>
+                      <input type="number" id="price" name="price" value="500"  style="width: 50px;color: white;">
+                    </div>
+                    <div class="sell-container date_sell">
+                      <p>Ngày khởi hành:</p>
+                      <input type="date"  class="date-input" name="departure_day" id="departure_day">
+                    </div>
+                    <div class="sell-container people_sell">
+                      <p>Số lượng người:</p>
+                      <div style="display: flex;" class="input-people">
+                        <p onclick="changeValue('-')" class="button-people">-</p>
+                        <input style="justify-content: center;display: flex;width: 17px;color: var(--bright-navy-blue);" name="number_people" id="number_people" value="1" >
+                        <p onclick="changeValue('+')"class="button-people">+</p>
+                      </div>
+                    </div>
+                    <div class="sell-container">
+                      <p>Hóa đơn:</p>
+                      <input type="number"  name="bill" id="bill" value="500" style="width: 67px;color: white;" >
+                    </div>
+                    <div class="btn-group" >
+                     <button type="submit" class="btn btn-primary" >đặt chuyến</button>
+                    </div>
+                  </form>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="describe">
+          <div class="container ">
+            <p class="section-subtitle">một chuyến đi tuyệt vời</p>
+            <h3 class="h2 section-title">NÀO CÙNG XEM LỘ TRÌNH CHI TIẾT</h3>
+            <p class="section-text">Hãy đến cùng trải nghiệm với bãi biển Mỹ Khê xanh rì, với Bà Nà Hills nổi tiếng ,với Cù Lao Chàm hoang sơ...</p>
+            <div class="date">
+              <h3 class="h3 card-title">ngày 1: HÀ NỘI – ĐÀ NẴNG – BÁN ĐẢO SƠN TRÀ </h3>
+              <p style="padding-top: 5px;"><strong>Sáng:</strong> Bắt đầu hành trình tour du lịch Hà Nội - Đà Nẵng - Hội An, xe và Hướng dẫn viên đón khách tại điểm hẹn ra sân bay Nội Bài. Quý khách Quý khách có mặt tại sân bay Nội Bài đón chuyến bay tới Đà Nẵng.</p>
+              <p><strong>Trưa:</strong> Tới Sân bay Đà Nẵng. Xe & HDV đón quý khách tại Sân bay Đà Nẵng đưa đi dùng bữa trưa. Nhận phòng khách sạn nghỉ ngơi.</p>
+              <p><strong>Chiều:</strong> Quý khách tham quan Bán Đảo Sơn Trà thưởng ngoạn toàn cảnh phố biển Đà Nẵng trên cao. Sở dĩ du lịch bán đảo Sơn Trà có sức hấp dẫn với khách du lịch Đà Nẵng lớn đến vậy là vì nơi đây có hệ sinh thái động thực vật đa dạng, chứa đựng nhiều “câu chuyện” chưa được kể hết.</p>
+              <p style="padding-bottom: 5px;"><strong>Tối:</strong> Quý khách ăn tối tại Nhà hàng. Quý khách tự do khám phá Đà Nẵng về đêm với các cây cầu nổi tiếng: Cầu Rồng phun lửa, Cầu treo Thuận Phước, Cầu Quay sông Hàn, Trung Tâm Thương Mại, Khu phố ẩm thực, Café - Bar - Discotheque, hoặc trải nghiệm cảm giác với Vòng quay Mặt trời Sun Wheel – Top 10 vòng quay cao nhất Thế Giới...</p>
+              <h3 class="h3 card-title">ngày 2: ĐÀ NẴNG – NGŨ HÀNH SƠN – HỘI AN  </h3>
+              <p style="padding-top: 5px;"><strong>Sáng:</strong> Khởi hành đi Ngũ Hành Sơn – cách trung tâm 10km với 5 ngọn núi được nằm theo hệ Ngũ Hành, dường như ai từng biết đến Đà Nẵng là biết đến Ngũ Hành Sơn. Không gian huyền ảo, thơ mộng, chùa chiền và hang động, cây cỏ và tiếng chuông chùa, sóng vỗ và những dằng dặc nghìn trùng…, từ lâu đã thật sự là một cõi thiên thai dành cho du khách. Có vẻ đẹp hài hòa của vùng sinh thái tự nhiên đan xen cùng với đời sống văn hóa tâm linh nên nơi đây càng ngày càng thu hút khách du lịch Đà Nẵng đến tham quan hàng năm.</p>
+              <p><strong>Trưa:</strong> Tiếp tục, đoàn di chuyển đến Hội An tham quan Phố Cổ - Được UNESCO công nhận là Di sản văn hoá thế giới với: Chùa Cầu Nhật Bản, Bảo tàng văn hóa Sa Huỳnh, Hội Quán Phước Kiến & Xưởng thủ công mỹ nghệ…</p>
+              <p style="padding-bottom: 5px;"><strong>Tối:</strong> Ăn tối nhà hàng, thưởng thức đặc sản Hội An (Cao Lầu - Hoành Thánh). Xe đưa quý khách về lại Đà Nẵng dọc đường biển để ngắm thành phố Đà Nẵng tuyệt đẹp về đêm với hàng loạt khu nghỉ dưỡng và Resort cao cấp.</p>
+              <h3 class="h3 card-title">ngày 3: CITY ĐÀ NẴNG – MUA SẮM – HÀ NỘI  </h3>
+              <p style="padding-top: 5px;"><strong>Sáng:</strong> Vào ngày cuối cùng của hành trình tour Đà Nẵng 4 ngày 3 đêm, xe và Hướng dẫn sẽ đưa Quý khách dạo quanh, ngắm nhìn và nghe hướng dẫn thuyết minh về những điểm nhấn kiến trúc nổi tiếng của Thành Phố Du Lịch Đà Nẵng: Tòa nhà hành chính, Cầu Quay sông Hàn, Cầu Rồng: tản bộ hít thở không khí trong lành bên bờ sông Hàn, tham quan và chụp hình lưu lại dấu ấn khó quên tại Cầu Tình yêu, chiêm ngưỡng tượng "Cá chép hóa rồng" …Mua sắm quà tại siêu thị đặc sản miền Trung hoặc chợ Hàn.</p>
+              <p style="padding-bottom: 5px;"><strong>Trưa:</strong> Ăn trưa nhà hàng với đặc sản nổi tiếng Đà Nẵng “Bánh tráng thịt heo 2 đầu da & Mỳ Quảng”.
+                Xe và HDV đưa quý khách ra sân bay Đà Nẵng đáp chuyến bay về Hà Nội. Đến sân bay Nội Bài, xe và HDV đưa quý khách về lại điểm hẹn ban đầu. Kết thúc chương trình tour du lịch Hà Nội – Đà Nẵng (04 ngày 03 đêm). Cat Tour chia tay quý khách, hẹn gặp lại quý khách trong các chuyến du lịch tiếp theo!</p>
+
+            </div>
+          </div>
+        
+        </div>
+      </section>
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <p class="section-subtitle">những bức ảnh của trải nghiệm</p>
+          <h2 class="h2 section-title">những khoảnh khắc tại đà nẵng</h2>
+          <p class="section-text">
+            Chúng ta có thể lấy lại được cảm giác hồi tưởng và những kỷ niệm
+            đáng nhớ qua những bức ảnh đó.
+          </p>
+          <ul class="gallery-list">
+            <li class="gallery-img">
+              <img
+                src="/assets/images/gallery-1.jpg"
+                alt=""
+                class="gallery-main"
+              />
+              <div class="gallery-content">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 8px;
+                  "
+                >
+                  <div class="avatar">
+                    <img src="/assets/images/avatar-1.jpg" alt="" />
+                  </div>
+                  <p class="gallery-person">Ngo Truong</p>
+                </div>
+                <p class="card-text" style="color: white; margin-bottom: 8px">
+                  Một bãi biển tuyệt vời!
+                </p>
+                <div class="gallery-icon">
+                  <i class="fa-solid fa-heart"></i>
+                  <p class="text" style="color: white; margin: 0 15px 0 8px">
+                    120
+                  </p>
+                  <i class="fa-solid fa-message"></i>
+                  <p class="text" style="color: white; margin: 0 15px 0 8px">
+                    56
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="gallery-img">
+              <img
+                src="/assets/images/status-1.jpg"
+                alt=""
+                class="gallery-main"
+              />
+              <div class="gallery-content">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 8px;
+                  "
+                >
+                  <div class="avatar">
+                    <img src="/assets/images/avatar-2.jpg" alt="" />
+                  </div>
+                  <p class="gallery-person">tran hue</p>
+                </div>
+                <p class="card-text" style="color: white; margin-bottom: 8px">
+                  Hãy sống hết mình('-')
+                </p>
+                <div class="gallery-icon">
+                  <i class="fa-solid fa-heart"></i>
+                  <p class="text" style="color: white; margin: 0 15px 0 8px">
+                    100
+                  </p>
+                  <i class="fa-solid fa-message"></i>
+                  <p class="text" style="color: white; margin: 0 15px 0 8px">
+                    40
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="gallery-img">
+              <img
+                src="/assets/images/status-2.jpg"
+                alt=""
+                class="gallery-main"
+              />
+              <div class="gallery-content">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 8px;
+                  "
+                >
+                  <div class="avatar">
+                    <img src="/assets/images/avatar-3.jpg" alt="" />
+                  </div>
+                  <p class="gallery-person">ngoc trinh</p>
+                </div>
+                <p class="card-text" style="color: white; margin-bottom: 8px">
+                  Thư giãn cuối tuần =))
+                </p>
+                <div class="gallery-icon">
+                  <i class="fa-solid fa-heart"></i>
+                  <p class="text" style="color: white; margin: 0 15px 0 8px">
+                    123
+                  </p>
+                  <i class="fa-solid fa-message"></i>
+                  <p class="text" style="color: white; margin: 0 15px 0 8px">
+                    60
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="gallery-img">
+              <img
+                src="/assets/images/gallery-4.jpg"
+                alt=""
+                class="gallery-main"
+              />
+              <div class="gallery-content">
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 8px;
+                  "
+                >
+                  <div class="avatar">
+                    <img src="/assets/images/avatar-4.jpg" alt="" />
+                  </div>
+                  <p class="gallery-person">thanh son</p>
+                </div>
+                <p class="card-text" style="color: white; margin-bottom: 8px">
+                  Đi thật xa để trở về ...
+                </p>
+                <div class="gallery-icon">
+                  <i class="fa-solid fa-heart"></i>
+                  <p class="text" style="color: white; margin: 0 15px 0 8px">
+                    210
+                  </p>
+                  <i class="fa-solid fa-message"></i>
+                  <p class="text" style="color: white; margin: 0 15px 0 8px">
+                    79
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <a href="discover.html">
+            <button class="btn btn-primary" style="margin: auto;">xem tất cả</button>
+          </a>
+        </div>
+      </section>
+      
+      <section class="cta" id="contact">
+        <div class="container">
+          <div class="cta-content">
+            <p class="section-subtitle">Liên hệ với chúng tôi</p>
+            <h2 class="h2 section-title">
+              sẵn sàng với những chuyến đi của cuộc đời!
+            </h2>
+            <p class="section-text">
+              Khám phá những điều tuyệt vời trên thế giới với chúng tôi -
+              Chuyến du lịch tuyệt vời đang chờ đón bạn!
+            </p>
+          </div>
+          <button class="btn btn-secondary">Contact Us !</button>
+        </div>
+      </section>
+      </article>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <h2 class="h2" style="color: white">Travel</h2>
+            </a>
+            <p class="footer-text">
+              Giấy chứng nhận đăng ký doanh nghiệp, mã số doanh nghiệp: 0100107518, đăng ký lần đầu ngày 30/6/2010, đăng ký thay đổi lần thứ 9 ngày 12/01/2022, cấp bởi Sở KHĐT thành phố Hà Nội.
+            </p>
+          </div>
+          <div class="footer-contact">
+            <h4 class="contact-title">Contact Us</h4>
+            <ul>
+              <li class="contact-item">
+                <ion-icon name="call-outline"></ion-icon>
+                <a href="" class="contact-link">(+84-24) 38272289</a>
+              </li>
+              <li class="contact-item">
+                <ion-icon name="mail-outline"></ion-icon>
+                <a href="" class="contact-link">travel@gmail.com</a>
+              </li>
+              <li class="contact-item">
+                <ion-icon name="location-outline"></ion-icon>
+                <address>Tran Phu, Ha Noi, Vietnam</address>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-form">
+            <p class="form-text">
+              Subscribe our newsletter for more update & news !!
+            </p>
+            <form action="" class="form-wrapper">
+              <input
+                type="email"
+                name="email"
+                class="input-field"
+                placeholder="Enter Your Email"
+                required
+              />
+              <button type="submit" class="btn btn-secondary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            &copy; 2022 <a href="">codewithsadee</a>. All rights reserved
+          </p>
+          <ul class="footer-bottom-list">
+            <li>
+              <a href="#" class="footer-bottom-link">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#" class="footer-bottom-link">Term & Condition</a>
+            </li>
+            <li>
+              <a href="#" class="footer-bottom-link">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#top" class="go-top" data-go-top>
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
+
+    <script src="./assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
